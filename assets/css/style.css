@@ -1,0 +1,114 @@
+/* Bloco 1 de código: CSS do index.html */
+body {
+    background-color: antiquewhite;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.containerPage{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.containerCenter {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navSquare {
+    background-color:rgb(37, 36, 65);
+    width: 1200px;
+    height: 150px;
+}
+
+.aboutSquare {
+    background-color:rgb(102, 163, 102);
+    width: 1200px;
+    height: 400px;
+    border-radius: 2%;
+}
+
+.footerSquare {
+    background-color:rgb(37, 36, 65);
+    color: rgb(88, 141, 88);
+    width: 1200px;
+    height: 130px;
+}
+
+.padding30 {
+    padding: 30px;
+}
+
+.padding {
+    padding-right: 346px;
+    padding-left: 346px;
+}
+
+.padding10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.paddingTop30{
+    padding-top: 30px;
+}
+
+.imgSize100 {
+    width: 100px;
+    height: 100px;
+}
+
+.imgSize250 {
+    width: 250px;
+    height: 250px;
+}
+
+.imgSize40 {
+    width: 40px;
+    height: 40px;
+}
+
+.borderRadius50 {
+    border-radius: 50%;
+}
+
+.titleText {
+    font-size: 30px;
+    color: white;
+}
+
+#menu li {
+    display: inline;
+    padding: 16px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#menu li a:hover {
+    font-size: 24px;
+    color: rgb(51, 58, 153);
+}
+
+.center {
+    text-align: center;
+}
+
+
+
+
+/* Bloco 2 de código: CSS do contato.html */
