@@ -1,7 +1,7 @@
 /* Bloco 1 de código: CSS do index.html */
 body {
     background-color: antiquewhite;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .containerPage{
@@ -25,7 +25,7 @@ body {
 }
 
 .navSquare {
-    background-color:rgb(37, 36, 65);
+    background-color:rgb(55, 54, 97);
     width: 1200px;
     height: 150px;
 }
@@ -34,7 +34,7 @@ body {
     background-color:rgb(102, 163, 102);
     width: 1200px;
     height: 400px;
-    border-radius: 2%;
+    border-radius: 10px;
 }
 
 .footerSquare {
@@ -101,7 +101,7 @@ body {
 
 #menu li a:hover {
     font-size: 24px;
-    color: rgb(51, 58, 153);
+    color: rgb(65, 74, 197);
 }
 
 .center {
@@ -112,3 +112,44 @@ body {
 
 
 /* Bloco 2 de código: CSS do contato.html */
+
+.containerCenterForm {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.containerForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin: 20px; 
+}
+
+.formCont{
+    width: 540px; 
+    height: 40px;
+    border: 2px solid rgb(88, 141, 88);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.formEnd{
+    width: 540px; 
+    height: 200px;
+    border: 2px solid rgb(88, 141, 88);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.button{
+    width: 540px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(55, 54, 97);
+    color:white;
+    border-radius: 10px;
+}

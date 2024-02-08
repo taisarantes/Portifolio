@@ -5,52 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/images/lara.png">
-    <link rel="stylesheet" href="assets/css/style.css">
     <title>Portfólio</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <nav>
-        <div>
-            <img src="assets/images/lara.png" alt="Logo">
-            <span>Portfólio da Lara</span>
-        </div>
+    <nav class="padding">
+        <div class="container navSquare">
+            <div class="container padding30">
+                <img class="imgSize100 borderRadius50" src="assets/images/eu.jpg" alt="Logo Tais">
+                <span class="titleText padding10">Portfólio da Tais</span>
+            </div>
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
+            <ul id="menu" class="padding30">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
     </nav>
 
 
-    <main>
-        <section>
-            <h3>Contato</h2>
-                <form>
+    <main class="containerCenterForm padding">
+        <section class="padding30">
+            <h3 class="center">Contato</h2>
+                <form class="containerForm">
                     <div class="campos-form">
                         <label for="nome">Nome:</label>
-                        <input onkeyup="validarNome()" id="nome" name="nome" type="text"
+                        <input class="formCont" onkeyup="validarNome()" id="nome" name="nome" type="text"
                             placeholder="Insira o seu nome completo">
                         <div id="txtNome"></div>
                     </div>
 
                     <div class="campos-form">
                         <label for="email">E-mail:</label>
-                        <input onkeyup="validarEmail2()" id="email" name="email" type="text"
+                        <input class="formCont" onkeyup="validarEmail2()" id="email" name="email" type="text"
                             placeholder="Insira o seu e-mail">
                         <div id="txtEmail"></div>
                     </div>
 
                     <div class="campos-form">
                         <label for="mensagem">Mensagem:</label>
-                        <textarea onkeyup="validarMensagem()" id="mensagem" name="mensagem" rows="8"
+                        <textarea class="formEnd" onkeyup="validarMensagem()" id="mensagem" name="mensagem" rows="8"
                             placeholder="Deixe sua mensagem..."></textarea>
                         <div id="txtMensagem"></div>
                     </div>
 
-                    <button type="button" onclick="enviarForm()">
+                    <button class="button" type="button" onclick="enviarForm()">
                         Enviar
                     </button>
 
@@ -58,41 +60,44 @@
                 </form>
         </section>
 
-        <section id="formulario_buscacep">
-            <h3>Consultar CEP</h3>
-            <div>
+        <section id="formulario_buscacep" class="padding30">
+            <h3 class="center">Consultar CEP</h3>
+            <div class="containerForm">
                 <div>
                     <label for="cep">CEP:</label>
-                    <input onkeyup="validarCep()" id="cep" name="cep" type="text" placeholder="Digite o número do CEP">
+                    <input class="formCont" onkeyup="validarCep()" id="cep" name="cep" type="text" placeholder="Digite o número do CEP">
                     <div id="txtCep"></div>
                 </div>
-                <button type="button" onclick="consultarCep()">
+                <button class="button" type="button" onclick="consultarCep()">
                     Consultar
                 </button>
                 <hr>
                 <div>
                     <label for="dados">Endereço:</label>
-                    <textarea id="dados" name="dados" rows="7" placeholder="Busca CEP..."></textarea>
+                    <textarea class="formEnd" id="dados" name="dados" rows="7" placeholder="Busca CEP..."></textarea>
                     <div id="txtCep"></div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div >
-            <a href="http://linkedin.com" target="_blank">
-                <img src="assets/images/linkedin.png" alt="Linkedin">
-            </a>
-            <a href="http://github.com" target="_blank">
-                <img src="assets/images/github.png" alt="Github">
-            </a>
-            <a href="http://instagram.com" target="_blank">
-                <img src="assets/images/instagram.png" alt="Instagram">
-            </a>
+    <footer class="padding paddingTop30">
+        <div class="footerSquare"> 
+            <div class="containerCenter">
+                <a href="www.linkedin.com/in/tais-arantes-3580ba228" target="_blank">
+                    <img class="imgSize40 padding10" src="assets/images/linkedin.png" alt="Linkedin">
+                </a>
+                <a href="https://github.com/taisarantes" target="_blank">
+                    <img class="imgSize40 padding10" src="assets/images/github.png" alt="Github">
+                </a>
+                <a href="https://www.instagram.com/taiscenery?igsh=MTl6cmhybnZsbGRnbA==" target="_blank">
+                    <img class="imgSize40 padding10" src="assets/images/instagram.png" alt="Instagram">
+                </a>
+            </div>
+            <p class="center">Desenvolvido por: Tais Arantes - 2024 &copy;</p>
         </div>
-        <p>Desenvolvido por: Liza Hainna - 2024 &copy;</p>
     </footer>
+    
     <script src="./assets/js/scripts.js"></script>
 </body>
 
